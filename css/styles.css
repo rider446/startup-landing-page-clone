@@ -32,7 +32,7 @@ body {
 	line-height: 1;
 }
 ol, ul {
-	list-style: none;
+	list-style: outside none none;
 }
 blockquote, q {
 	quotes: none;
@@ -45,4 +45,53 @@ q:before, q:after {
 table {
 	border-collapse: collapse;
 	border-spacing: 0;
+}
+/*---------Start of styles---------*/
+body {
+	background-color: gray;
+	font-family: "Roboto", sans-serif;
+	-webkit-font-smoothing: antialiased;
+}
+div {
+	border: 1px solid chocolate;
+}
+a {
+	text-decoration: none;
+}
+/*---------Navigation---------*/
+.top-navigation {
+	background-color: #FFF;
+	position: fixed;
+	width: 100%;
+	border-bottom: 1px solid #DDD;
+	z-index: 9999;
+}
+.top-navigation > .content {
+	height: 4.375rem;
+}
+.content {
+	width: 60%;
+	padding: 0 0.938rem;
+	margin: 0 auto;
+	min-width: 37.5rem;
+}
+.top-navigation .links {
+	float: right;
+	color: #838994;
+	font-size: 1.04rem;
+	margin-top: 1.7rem;
+}
+.top-navigation .links li.active {
+	color: #4C5058;
+}
+.top-navigation .links li {
+	display: inline-block;
+	margin-left: 1.563rem;
+}
+
+.top-navigation .links li a:hover {
+	color: #
+}
+.top-navigation .logo {
+	height: 4.375rem;
 }
