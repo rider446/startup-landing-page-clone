@@ -50,7 +50,6 @@ table {
 body {
 	background-color: gray;
 	font-family: "Roboto", sans-serif;
-	-webkit-font-smoothing: antialiased;
 }
 div {
 	border: 1px solid chocolate;
@@ -68,6 +67,7 @@ a {
 }
 .top-navigation > .content {
 	height: 4.375rem;
+	letter-spacing: 0.03em;
 }
 .content {
 	width: 60%;
@@ -78,20 +78,57 @@ a {
 .top-navigation .links {
 	float: right;
 	color: #838994;
-	font-size: 1.04rem;
+	font-size: 1.03rem;
 	margin-top: 1.7rem;
+	-webkit-font-smoothing: antialiased;
 }
-.top-navigation .links li.active {
+.top-navigation .links > .active {
 	color: #4C5058;
+	font-weight: 600;
 }
 .top-navigation .links li {
 	display: inline-block;
 	margin-left: 1.563rem;
 }
 
-.top-navigation .links li a:hover {
-	color: #
+.top-navigation .links li:hover {
+	color: #333333;
+	cursor: pointer;
 }
 .top-navigation .logo {
 	height: 4.375rem;
+}
+/*--------------------Main section---------------*/
+.intro-section {
+	height: 45.94rem;
+	background-image: url("../images/first-background copy.jpg");
+	text-align: center;
+	
+	
+}
+.intro-section h1 {
+	margin-top: 17.5rem;
+	font-size: 3.125rem;
+}
+.intro-section h1, .intro-section h3 {
+	color: #FFF;
+	
+	font-weight: 300;
+}
+.intro-section h3 {
+	margin-top: 1.25rem;
+	font-size: 1.563rem;
+}
+.intro-section .bttn {
+	margin-top: 1.25rem;
+}
+button {
+	width: 9.688rem;
+	background-color: #F15A29;
+	color: #FFF;
+	padding: 1rem 1.5rem;
+	border-color: #F15A29;
+	border-radius: 4px;
+	border-style: none;
+	font-size: 1.125rem;
 }
