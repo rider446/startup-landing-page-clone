@@ -48,7 +48,7 @@ table {
 }
 /*---------Start of styles---------*/
 body {
-	background-color: gray;
+	background-color: #FFF;
 	font-family: "Roboto", sans-serif;
 }
 div {
@@ -56,7 +56,9 @@ div {
 }
 a {
 	text-decoration: none;
+    color: inherit;
 }
+
 /*---------Navigation---------*/
 .top-navigation {
 	background-color: #FFF;
@@ -67,7 +69,6 @@ a {
 }
 .top-navigation > .content {
 	height: 4.375rem;
-	letter-spacing: 0.03em;
 }
 .content {
 	width: 60%;
@@ -77,52 +78,52 @@ a {
 }
 .top-navigation .links {
 	float: right;
-	color: #838994;
-	font-size: 1.03rem;
+	font-size: 1.04rem;
 	margin-top: 1.7rem;
-	-webkit-font-smoothing: antialiased;
+    color: #838994;
 }
-.top-navigation .links > .active {
-	color: #4C5058;
-	font-weight: 600;
+.top-navigation .links li.active {
+	font-weight: 500;
+    color: #3c4048;
 }
 .top-navigation .links li {
 	display: inline-block;
 	margin-left: 1.563rem;
 }
-
-.top-navigation .links li:hover {
-	color: #333333;
+.top-navigation .links li a:hover {
+	color: #040404;
 	cursor: pointer;
 }
 .top-navigation .logo {
 	height: 4.375rem;
 }
 /*--------------------Main section---------------*/
-.intro-section {
-	height: 45.94rem;
+.introduction {
 	background-image: url("../images/first-background copy.jpg");
-	text-align: center;
-	
-	
+	background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45.938rem;
+    overflow: auto;
 }
-.intro-section h1 {
+.introduction h1 {
 	margin-top: 17.5rem;
 	font-size: 3.125rem;
 }
-.intro-section h1, .intro-section h3 {
+.introduction h1, .introduction h3 {
 	color: #FFF;
-	
+	text-align: center;
 	font-weight: 300;
 }
-.intro-section h3 {
+.introduction h3 {
 	margin-top: 1.25rem;
 	font-size: 1.563rem;
 }
-.intro-section .bttn {
+.introduction .bttn {
 	margin-top: 1.25rem;
+	text-align: center;
 }
-button {
+.bigButton {
 	width: 9.688rem;
 	background-color: #F15A29;
 	color: #FFF;
@@ -131,4 +132,27 @@ button {
 	border-radius: 4px;
 	border-style: none;
 	font-size: 1.125rem;
+}
+/*---------------second section---------------*/
+.cases .content {
+	margin-top: 7.25rem;
+}
+.cases h2 {
+	font-size: 2.75rem;
+	text-align: center;
+    font-weight: 200;
+}
+.items {
+    text-align: center;
+}
+.items li {
+    display: inline-block;
+    margin-top: 2.3rem;
+    width: 33.33%;
+    float: left;
+}
+.caption h3{
+    font-weight: 400;
+    font-size: 1.563rem;
+    padding: 3rem 0;
 }
